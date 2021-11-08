@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Component
+class Composite
+class Leaf
+
+Composite *-- Component
+Composite .. Component
+Leaf ..Component
+
+
+
+@enduml
