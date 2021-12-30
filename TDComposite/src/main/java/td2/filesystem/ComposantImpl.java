@@ -9,10 +9,10 @@ public abstract class ComposantImpl implements Composant {
     public String getName() {
         return name;
     }
-    @Override
+    /*@Override
     public Owner getOwner() {
             return ow;
-    }
+    }*/
     @Override
     public void setOwner(Owner owner, Boolean recursive) {
 

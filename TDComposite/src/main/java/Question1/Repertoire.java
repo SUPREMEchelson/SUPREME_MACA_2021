@@ -1,11 +1,10 @@
-package td2.filesystem;
+package Question1;
 
-import java.util.List;
-
-public class Repertoire<T> implements Composant, Composite<T> {
-    Repertoire(String name, Owner owner){
-
+public class Repertoire implements Composant {
+    public Repertoire(String name, Owner owner) {
+        super();
     }
+
     @Override
     public String getName() {
         return null;
@@ -19,12 +18,11 @@ public class Repertoire<T> implements Composant, Composite<T> {
     @Override
     public void setOwner(Owner owner, Boolean recursive) {
 
-
     }
 
     @Override
     public Integer getSize() {
-        return getSize();
+        return null;
     }
 
     @Override
@@ -39,26 +37,6 @@ public class Repertoire<T> implements Composant, Composite<T> {
 
     @Override
     public boolean isComposite() {
-        return false;
-    }
-
-    @Override
-    public List<T> getChildren() {
-        return null;
-    }
-
-    @Override
-    public void addChild(T t) {
-
-    }
-
-    @Override
-    public boolean removeChild(T t) {
-        return false;
-    }
-
-    @Override
-    public boolean removeChildren(List<T> t) {
         return false;
     }
 }
