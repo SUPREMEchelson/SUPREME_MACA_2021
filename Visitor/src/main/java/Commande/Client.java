@@ -1,30 +1,29 @@
 package Commande;
 
-import Visitable.Visitable;
-import Visitors.PrePostVisitor;
 import Visitors.Visitor;
-import jdk.jfr.Percentage;
 
-public class Client implements Visitable {
-    private String client;
-    private String commande;
-
-    Client(String client){
-        this.client=client;
+public class Client implements Visitor {
+    public Client() {
     }
-    void addCommande(Commande commande){
 
 
-    }
     @Override
-    public void accept(Visitor visitor) {
+    public void visit(GroupeClient groupeClient) {
 
     }
+
     @Override
-    public void accept(Visitor visitor){
-        for(Commande c: commande.values())
-            c.accept(visitor);
-        visitor.visit(this);
+    public void visit(Client client) {
+
     }
 
+    @Override
+    public void visit(Commande commande) {
+
+    }
+
+    @Override
+    public void visit(Ligne ligne) {
+
+    }
 }
