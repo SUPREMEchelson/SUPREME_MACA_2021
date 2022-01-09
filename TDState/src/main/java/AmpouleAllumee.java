@@ -1,4 +1,3 @@
-package ampoule;
 
 public final class AmpouleAllumee implements AmpouleState {
 

@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class AmpouleState {
+
+public interface AmpouleState {
+    void allumer(Ampoule a);
+    void eteindre(Ampoule a);
+    void reparer(Ampoule a);
 }

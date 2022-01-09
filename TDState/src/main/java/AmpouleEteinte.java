@@ -1,4 +1,3 @@
-package ampoule;
 
 public final class AmpouleEteinte implements AmpouleState {
 
